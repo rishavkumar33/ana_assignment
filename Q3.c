@@ -22,7 +22,7 @@ float generate_random_number_newton_raphson(int upper)
 
 float *generate_random_number(int upper)
 {
-    float arr[2] = {0};
+    static float arr[2] = {0};
     float n1 = (float)(rand() % upper)+1;
     float n1_value = sign_value(n1,0);
     float n2 = (float)(rand() % upper) + 1;

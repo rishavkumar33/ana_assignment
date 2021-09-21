@@ -12,7 +12,7 @@ float sign_value(float x)
 
 float *generate_random_number(int upper, int left )
 {
-    float arr[2] = {0};
+    static float arr[2] = {0};
     float n1 = (float)(rand() % upper)+1;
     if (left)
         n1 *= -1;
